@@ -68,14 +68,14 @@ function Timeline() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="Dec 2019 – Oct 2021"
+              date="May 2018 – Jun 2018"
               iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
               icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Dr.Reddy's</h3>
+            <h3 className="vertical-timeline-element-title">GP Infotech</h3>
             <h4 className="vertical-timeline-element-subtitle">Hyderabad, In</h4>
             <p>
-              Java Developer <br></br>
+              .Net Developer <br></br>
               Application Development
             </p>
           </VerticalTimelineElement>

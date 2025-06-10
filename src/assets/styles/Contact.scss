@@ -2,7 +2,7 @@
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 
   button {
     align-self: flex-end;
@@ -22,27 +22,45 @@
 
 .form-flex {
   display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
+  flex-direction: row;
+  gap: 20px;
   flex-wrap: wrap;
-}
-
-.form-flex .MuiFormControl-root {
   width: 100%;
 }
 
+.form-flex .MuiFormControl-root {
+  flex: 1 1 45%;
+  min-width: 250px;
+}
+
 form {
-  width: 100% !important;
+  width: 100%;
 }
 
 .body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-/* -----------------------------
-   Dark Mode Styling
------------------------------- */
+/* Autofill Fix (Dark Mode + Light Mode) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #121212 inset !important;
+}
+
+.light-mode input:-webkit-autofill,
+.light-mode textarea:-webkit-autofill {
+  -webkit-text-fill-color: #000000 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+/* Dark Mode Styling */
 .dark-mode .MuiOutlinedInput-root {
   background-color: #121212;
   color: #ffffff;
@@ -61,22 +79,16 @@ form {
   color: #ffffff;
 }
 
-/* 💡 Always white borders in dark mode */
 .dark-mode .MuiOutlinedInput-notchedOutline {
   border-color: #ffffff !important;
 }
 
-.dark-mode .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-  border-color: #ffffff !important;
-}
-
+.dark-mode .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .dark-mode .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #ffffff !important;
 }
 
-/* -----------------------------
-   Light Mode Styling
------------------------------- */
+/* Light Mode Styling */
 .light-mode .MuiOutlinedInput-root {
   background-color: #ffffff;
   color: #000000;
@@ -99,10 +111,33 @@ form {
   border-color: #000000 !important;
 }
 
-.light-mode .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+.light-mode .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.light-mode .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #000000 !important;
 }
 
-.light-mode .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #000000 !important;
+.form-status {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Dark mode: white text */
+.dark-mode .form-status.success {
+  color: #ffffff;
+}
+
+/* Light mode: black text */
+.light-mode .form-status.success {
+  color: #000000;
+}
+
+/* Optional: error styles if you want them to follow theme too */
+.dark-mode .form-status.error {
+  color: #ff4d4d;
+}
+
+.light-mode .form-status.error {
+  color: #d00000;
 }
