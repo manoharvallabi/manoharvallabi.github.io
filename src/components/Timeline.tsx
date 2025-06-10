@@ -16,26 +16,28 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="Feb 2024 - present"
+            date="Feb 2025 - present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Blue Shield of California</h3>
-            <h4 className="vertical-timeline-element-subtitle">Oakland, CA</h4>
+            <h3 className="vertical-timeline-element-title">California State University</h3>
+            <h4 className="vertical-timeline-element-subtitle">Long Beach, CA</h4>
             <p>
-              Full-stack Web Development, Health Care Applications
+              Web Developer <br></br>
+              Full-stack Web Development
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Apr 2023 – Jan 2024"
+            date="Mar 2024 – Dec 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Voya Financial Inc.</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Mateo, CA</h4>
+            <h3 className="vertical-timeline-element-title">California State University</h3>
+            <h4 className="vertical-timeline-element-subtitle">Long Beach, CA</h4>
             <p>
-              Full-stack Web Development, Financial Applications
+              Student Assistant <br></br>
+              API Development, User Experience
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
