@@ -18,11 +18,17 @@ function Contact() {
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [statusType, setStatusType] = useState<'success' | 'error' | null>(null);
 
+  // Email validation function
+  const isValidEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
     const isNameValid = name.trim() !== '';
-    const isEmailValid = email.trim() !== '';
+    const isEmailValid = email.trim() !== '' && isValidEmail(email);
     const isMessageValid = message.trim() !== '';
 
     setNameError(!isNameValid);
@@ -94,12 +100,13 @@ function Contact() {
               />
               <TextField
                 required
-                label="Email / Phone"
-                placeholder="How can I reach you?"
+                label="Email"
+                placeholder="Enter your email address"
+                type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 error={emailError}
-                helperText={emailError ? 'Please enter your email or phone number' : ''}
+                helperText={emailError ? 'Please enter a valid email address' : ''}
               />
             </div>
             <TextField

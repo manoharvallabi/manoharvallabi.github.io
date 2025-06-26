@@ -84,7 +84,7 @@ function Expertise() {
                     <FontAwesomeIcon icon={faGlobe} size="3x"/>
                     <h3>Cross-Industry Engineering</h3>
                     <p>
-                        I've engineered solutions across healthcare, finance, telecom, and insurance industries, focusing on
+                        I've engineered solutions across diverse industries, focusing on
                         secure, scalable systems tailored to industry needs and compliance.
                     </p>
                     <div className="flex-chips">

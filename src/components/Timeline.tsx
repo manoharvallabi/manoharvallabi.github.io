@@ -23,7 +23,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">California State University</h3>
             <h4 className="vertical-timeline-element-subtitle">Long Beach, CA</h4>
             <p>
-              Web Developer <br></br>
+              Software Associate <br></br>
               Full-stack Web Development
             </p>
           </VerticalTimelineElement>
@@ -36,8 +36,8 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">California State University</h3>
             <h4 className="vertical-timeline-element-subtitle">Long Beach, CA</h4>
             <p>
-              Student Assistant <br></br>
-              API Development, User Experience
+              Research Associate <br></br>
+              Data Analysis, API Development, User Experience
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
