@@ -64,7 +64,7 @@ function Navigation({parentToChild, modeChange}: any) {
       sx={{
         textAlign: 'center',
         color: mode === 'dark' ? '#fff' : '#000',
-        backgroundColor: mode === 'dark' ? '#222' : '#fff',
+        backgroundColor: mode === 'dark' ? '#000000' : '#fff',
         height: '100%',
       }}
     >

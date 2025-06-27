@@ -94,7 +94,10 @@ function Contact() {
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => {
+                  setName(e.target.value);
+                  if (nameError) setNameError(false);
+                }}
                 error={nameError}
                 helperText={nameError ? 'Please enter your name' : ''}
               />
@@ -104,7 +107,10 @@ function Contact() {
                 placeholder="Enter your email address"
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  if (emailError) setEmailError(false);
+                }}
                 error={emailError}
                 helperText={emailError ? 'Please enter a valid email address' : ''}
               />
@@ -117,7 +123,10 @@ function Contact() {
               rows={10}
               className="body-form"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e) => {
+                setMessage(e.target.value);
+                if (messageError) setMessageError(false);
+              }}
               error={messageError}
               helperText={messageError ? 'Please enter the message' : ''}
             />
