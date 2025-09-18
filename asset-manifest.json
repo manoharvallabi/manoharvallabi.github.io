@@ -1,31 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.99edb6ec.css",
-    "main.js": "/static/js/main.4a92ca2b.js",
+    "main.css": "/static/css/main.da030459.css",
+    "main.js": "/static/js/main.d4e633f3.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
-    "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
-    "static/media/mock09.png": "/static/media/mock09.e18677ccfc932e52d754.png",
-    "static/media/mock08.png": "/static/media/mock08.13f46873fdbd382f4b76.png",
-    "static/media/mock04.png": "/static/media/mock04.f7b5679efade992a078c.png",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock07.png": "/static/media/mock07.3f1110f482232b33c6a2.png",
-    "static/media/mock05.png": "/static/media/mock05.4faafa70d200d1519a34.png",
-    "static/media/mock06.png": "/static/media/mock06.ea816617e0d0fa0f63ca.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/mock01.png": "/static/media/mock01.61bd486a54bf6e17ee5a.png",
-    "static/media/mock02.png": "/static/media/mock02.bced48ae9cdda3acf1a3.png",
-    "static/media/mock03.png": "/static/media/mock03.a4600719e0b5d2a3155b.png",
     "static/media/gpinfotechlogo.svg": "/static/media/gpinfotechlogo.b9a688cc6df1746d4aa180747bee76b9.svg",
     "static/media/cognizantlogo.svg": "/static/media/cognizantlogo.1bccb176320b5f14adda8c4f4f2fcd18.svg",
     "static/media/LT.svg": "/static/media/LT.dc121371ecd1fb9b492ad294063a5153.svg",
     "index.html": "/index.html",
     "static/media/accenturelogo.svg": "/static/media/accenturelogo.ae36e09974f7a67eb4f693a138a72133.svg",
-    "main.99edb6ec.css.map": "/static/css/main.99edb6ec.css.map",
-    "main.4a92ca2b.js.map": "/static/js/main.4a92ca2b.js.map",
+    "main.da030459.css.map": "/static/css/main.da030459.css.map",
+    "main.d4e633f3.js.map": "/static/js/main.d4e633f3.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99edb6ec.css",
-    "static/js/main.4a92ca2b.js"
+    "static/css/main.da030459.css",
+    "static/js/main.d4e633f3.js"
   ]
 }
