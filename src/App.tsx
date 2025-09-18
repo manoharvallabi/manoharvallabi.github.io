@@ -42,7 +42,7 @@ function App() {
             <Main parentToChild={{mode}}/>
             <Expertise/>
             <Timeline/>
-            {/*<Project/>*/}
+            <Project/>
             <Contact/>
         </FadeIn>
         <Footer />

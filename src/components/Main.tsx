@@ -92,7 +92,11 @@ function Main({ parentToChild }: MainProps) {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://i.postimg.cc/FzdbF2PD/Manohartest-cropped.jpg" alt="Avatar" />
+          <img 
+            src="https://i.postimg.cc/FzdbF2PD/Manohartest-cropped.jpg" 
+            alt="Avatar" 
+            style={{ cursor: 'default' }}
+          />
         </div>
         <div className="content">
           <div className="social_icons">

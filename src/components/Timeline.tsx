@@ -48,7 +48,7 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Accenture</h3>
             <h4 className="vertical-timeline-element-subtitle">Hyderabad, In</h4>
-            <p>Application Development Analyst <br /> API Development, User Experience</p>
+            <p>Software Engineer <br /> API Development, User Experience</p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement

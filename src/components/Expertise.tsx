@@ -10,16 +10,15 @@ const labelsFirst = [
     "React",
     "TypeScript",
     "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
     "Java",
     "SpringBoot",
     "Python",
     "Flask",
     "SQL",
     "PostgreSQL",
-    "Postman"
+    "Postman",
+    "GitHub Copilot",
+    "Cursor"
 ];
 
 const labelsSecond = [
@@ -57,7 +56,7 @@ function Expertise() {
                     <FontAwesomeIcon icon={faJava} size="3x"/>
                     <h3>Full Stack Web Development</h3>
                     <p>
-                        I build scalable full stack applications using React and Spring Boot, with a strong focus on
+                        I build scalable full stack apps using React, Spring Boot and Python with strong focus on
                         clean architecture, REST APIs, and cloud-ready deployment.
                     </p>
                     <div className="flex-chips">
