@@ -101,7 +101,7 @@ function Main({ parentToChild }: MainProps) {
         <div className="content">
           <div className="social_icons">
             <a href="https://github.com/manoharvallabi" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/manoharvallabi/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/v-manohar-38a0a0141/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
             <a href="#" onClick={handleResumeClick}><DescriptionIcon/></a>
           </div>
           <h1>Manohar Vallabi</h1>
@@ -109,7 +109,7 @@ function Main({ parentToChild }: MainProps) {
 
           <div className="mobile_social_icons">
             <a href="https://github.com/manoharvallabi" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/manoharvallabi/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://www.linkedin.com/in/v-manohar-38a0a0141/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
             <a href="#" onClick={handleResumeClick}><DescriptionIcon/></a>
           </div>
         </div>

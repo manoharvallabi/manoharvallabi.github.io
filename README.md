@@ -109,7 +109,7 @@ src/
 
 ## Contact Me
 
-- **LinkedIn:** [linkedin.com/in/manoharvallabi](https://linkedin.com/in/manoharvallabi)
+- **LinkedIn:** [linkedin.com/in/v-manohar-38a0a0141](https://linkedin.com/in/v-manohar-38a0a0141)
 - **GitHub:** [github.com/manoharvallabi](https://github.com/manoharvallabi)
 
 ---
