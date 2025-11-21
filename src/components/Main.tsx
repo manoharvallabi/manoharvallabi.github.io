@@ -36,6 +36,8 @@ const SmoothTransition = React.forwardRef(function Transition(
   );
 });
 
+const RESUME_URL = 'https://manohar-portfolio.s3.us-east-2.amazonaws.com/Manohar_Vallabi_Software_Engineer.pdf';
+
 function Main({ parentToChild }: MainProps) {
   const [open, setOpen] = useState(false);
   const mode = parentToChild?.mode || 'dark';
@@ -50,7 +52,7 @@ function Main({ parentToChild }: MainProps) {
     e.preventDefault();
     if (isMobile()) {
       // Open in new tab on mobile
-      window.open('/resume.pdf', '_blank');
+      window.open(RESUME_URL, '_blank');
     } else {
       // Open modal on desktop
       setOpen(true);
@@ -206,7 +208,7 @@ function Main({ parentToChild }: MainProps) {
           }}
         >
           <iframe
-            src="/resume.pdf"
+            src={RESUME_URL}
             title="Resume"
             width="100%"
             height="600px"
