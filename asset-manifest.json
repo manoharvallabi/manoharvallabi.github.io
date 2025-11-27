@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.da030459.css",
-    "main.js": "/static/js/main.6c3799fa.js",
+    "main.css": "/static/css/main.2b1386be.css",
+    "main.js": "/static/js/main.feb71394.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
@@ -10,12 +10,12 @@
     "static/media/LT.svg": "/static/media/LT.dc121371ecd1fb9b492ad294063a5153.svg",
     "index.html": "/index.html",
     "static/media/accenturelogo.svg": "/static/media/accenturelogo.ae36e09974f7a67eb4f693a138a72133.svg",
-    "main.da030459.css.map": "/static/css/main.da030459.css.map",
-    "main.6c3799fa.js.map": "/static/js/main.6c3799fa.js.map",
+    "main.2b1386be.css.map": "/static/css/main.2b1386be.css.map",
+    "main.feb71394.js.map": "/static/js/main.feb71394.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da030459.css",
-    "static/js/main.6c3799fa.js"
+    "static/css/main.2b1386be.css",
+    "static/js/main.feb71394.js"
   ]
 }
