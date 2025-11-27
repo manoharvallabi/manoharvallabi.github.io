@@ -108,7 +108,6 @@ function Main({ parentToChild }: MainProps) {
             <CloseIcon />
           </IconButton>
         </DialogTitle>
-
         <DialogContent dividers>
           <iframe
             src={RESUME_URL}
