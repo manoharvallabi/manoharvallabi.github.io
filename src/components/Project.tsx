@@ -8,10 +8,10 @@ import '../assets/styles/Project.scss';
 const projectData = [
     {
         title: "PDF RAG Chat AI",
-        description: "Built an AI PDF Chatbot with PDF RAG app that streams answers via Groq (Llama-3.1-8B) using semantic embeddings (local/OpenAI/HF) + BM25 fallback, PyPDF/pdfminer extraction, and an in-memory index, UI in Streamlit.",
+        description: "Built an AI PDF Chatbot with PDF RAG app that streams answers via OpenAI using semantic embeddings (local/OpenAI/HF) + BM25 fallback, PyPDF/pdfminer extraction, and an in-memory index, UI in Streamlit.",
         githubLink: "https://github.com/manoharvallabi/pdf-rag-chat-AI",
         liveLink: "https://interactpdf.streamlit.app/",
-        technologies: ["Python", "Streamlit", "Hugging Face", "Groq", "ChromaDB", "LangChain", "Vector DB"]
+        technologies: ["Python", "Streamlit", "Hugging Face", "OpenAI", "ChromaDB", "LangChain", "Vector DB"]
     },
     {
         title: "AI-Generated Email Reply",

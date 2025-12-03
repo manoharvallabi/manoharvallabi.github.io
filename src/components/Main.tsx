@@ -37,7 +37,9 @@ function Main({ parentToChild }: MainProps) {
   const [open, setOpen] = useState(false);
   const mode = parentToChild?.mode || "dark";
 
-  const isMobile = () => window.innerWidth <= 768;
+  // Keep this in sync with CSS breakpoints:
+  // Mobile styles apply at max-width: 767px, tablet/desktop at min-width: 768px.
+  const isMobile = () => window.innerWidth < 768;
 
   const handleResumeClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -91,7 +93,7 @@ function Main({ parentToChild }: MainProps) {
             </div>
 
             <h1>Manohar Vallabi</h1>
-            <p>Full Stack Engineer</p>
+            <p>Software Engineer</p>
 
             <div className="mobile_social_icons">
               <a href="https://github.com/manoharvallabi" target="_blank" rel="noreferrer">
@@ -112,20 +114,64 @@ function Main({ parentToChild }: MainProps) {
         </div>
       </div>
 
-      <Dialog open={open} onClose={() => setOpen(false)} maxWidth="md" fullWidth TransitionComponent={SmoothTransition}>
-        <DialogTitle>
+      <Dialog
+        open={open}
+        onClose={() => setOpen(false)}
+        maxWidth="md"
+        fullWidth
+        TransitionComponent={SmoothTransition}
+        PaperProps={{
+          sx: {
+            backgroundColor: mode === "dark" ? "#121212" : "#ffffff",
+            color: mode === "dark" ? "#ffffff" : "#000000",
+          },
+        }}
+        BackdropProps={{
+          sx: {
+            backgroundColor:
+              mode === "dark"
+                ? "rgba(0, 0, 0, 0.8)"
+                : "rgba(0, 0, 0, 0.4)",
+          },
+        }}
+      >
+        <DialogTitle
+          sx={{
+            backgroundColor: mode === "dark" ? "#121212" : "#ffffff",
+            color: mode === "dark" ? "#ffffff" : "#000000",
+            borderBottom:
+              mode === "dark" ? "1px solid #333" : "1px solid #e0e0e0",
+          }}
+        >
           My Resume
-          <IconButton onClick={() => setOpen(false)} sx={{ position: "absolute", right: 8, top: 8 }}>
+          <IconButton
+            onClick={() => setOpen(false)}
+            sx={{
+              position: "absolute",
+              right: 8,
+              top: 8,
+              color: mode === "dark" ? "#ffffff" : "#000000",
+            }}
+          >
             <CloseIcon />
           </IconButton>
         </DialogTitle>
-        <DialogContent dividers>
+        <DialogContent
+          dividers
+          sx={{
+            backgroundColor: mode === "dark" ? "#121212" : "#ffffff",
+            color: mode === "dark" ? "#ffffff" : "#000000",
+          }}
+        >
           <iframe
             src={RESUME_URL}
             title="Resume"
             width="100%"
             height="600px"
-            style={{ border: "none" }}
+            style={{
+              border: "none",
+              backgroundColor: mode === "dark" ? "#121212" : "#ffffff",
+            }}
           />
         </DialogContent>
       </Dialog>
