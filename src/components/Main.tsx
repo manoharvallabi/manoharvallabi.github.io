@@ -5,6 +5,9 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import { Dialog, DialogContent, DialogTitle, IconButton, Fade } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { TransitionProps } from "@mui/material/transitions";
+import { isMobile as isMobileDevice } from "../utils/deviceDetection";
+import bgLight from "../assets/images/bg-light.png";
+import bgDark from "../assets/images/bg-dark.png";
 import "../assets/styles/Main.scss";
 
 interface MainProps {
@@ -35,15 +38,13 @@ const RESUME_URL =
 
 function Main({ parentToChild }: MainProps) {
   const [open, setOpen] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const mode = parentToChild?.mode || "dark";
-
-  // Keep this in sync with CSS breakpoints:
-  // Mobile styles apply at max-width: 767px, tablet/desktop at min-width: 768px.
-  const isMobile = () => window.innerWidth < 768;
 
   const handleResumeClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (isMobile()) {
+    // Use device detection instead of screen size
+    if (isMobileDevice()) {
       window.open(RESUME_URL, "_blank");
     } else {
       setOpen(true);
@@ -63,16 +64,48 @@ function Main({ parentToChild }: MainProps) {
     if (link) link.href = "/lblogo.svg";
   }, [mode]);
 
+  // Preload background images for faster loading
+  useEffect(() => {
+    const preloadImage = (src: string) => {
+      // Check if link already exists to prevent duplicates
+      const existingLink = document.querySelector(`link[rel="preload"][as="image"][href="${src}"]`);
+      if (existingLink) return;
+
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = src;
+      document.head.appendChild(link);
+    };
+
+    // Preload both background images
+    preloadImage(bgLight);
+    preloadImage(bgDark);
+
+    // Preload profile image
+    preloadImage("https://i.postimg.cc/FzdbF2PD/Manohartest-cropped.jpg");
+  }, []);
+
   return (
     <div className="container">
       <div className="about-section">
         <div className="about-inner">
           <div className="image-wrapper">
-            <img
-              src="https://i.postimg.cc/FzdbF2PD/Manohartest-cropped.jpg"
-              alt="Avatar"
-              style={{ cursor: "default" }}
-            />
+            {!imageError ? (
+              <img
+                src="https://i.postimg.cc/FzdbF2PD/Manohartest-cropped.jpg"
+                alt="Avatar"
+                width="150"
+                height="150"
+                style={{ cursor: "default" }}
+                onError={() => setImageError(true)}
+                onLoad={() => setImageError(false)}
+                loading="eager"
+                fetchPriority="high"
+              />
+            ) : (
+              <div className="image-placeholder">MV</div>
+            )}
           </div>
 
           <div className="content">
