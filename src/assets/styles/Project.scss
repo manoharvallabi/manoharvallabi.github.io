@@ -46,10 +46,23 @@
     font-size: 1.2rem;
     transition: color 0.3s ease;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-icon svg {
+    color: inherit;
+    fill: currentColor;
 }
 
 .project-icon:hover {
     color: #667eea;
+}
+
+.project-icon:hover svg {
+    color: #667eea;
+    fill: #667eea;
 }
 
 .projects-container .projects-grid .project p {
@@ -97,6 +110,25 @@
     }
 }
 
+// Dark mode styles (explicit)
+.dark-mode .project-icon {
+    color: #ffffff;
+}
+
+.dark-mode .project-icon svg {
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+.dark-mode .project-icon:hover {
+    color: #667eea;
+}
+
+.dark-mode .project-icon:hover svg {
+    color: #667eea;
+    fill: #667eea;
+}
+
 // Light mode styles
 .light-mode .projects-container h1 {
     color: #0d1116;
@@ -110,8 +142,18 @@
     color: #0d1116;
 }
 
+.light-mode .project-icon svg {
+    color: #0d1116;
+    fill: #0d1116;
+}
+
 .light-mode .project-icon:hover {
     color: #667eea;
+}
+
+.light-mode .project-icon:hover svg {
+    color: #667eea;
+    fill: #667eea;
 }
 
 .light-mode .projects-container .projects-grid .project p {
