@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3cd41b4.css",
-    "main.js": "/static/js/main.2d000286.js",
+    "main.css": "/static/css/main.6c04869e.css",
+    "main.js": "/static/js/main.8f64132e.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
@@ -10,12 +10,12 @@
     "static/media/LT.svg": "/static/media/LT.dc121371ecd1fb9b492ad294063a5153.svg",
     "index.html": "/index.html",
     "static/media/accenturelogo.svg": "/static/media/accenturelogo.ae36e09974f7a67eb4f693a138a72133.svg",
-    "main.f3cd41b4.css.map": "/static/css/main.f3cd41b4.css.map",
-    "main.2d000286.js.map": "/static/js/main.2d000286.js.map",
+    "main.6c04869e.css.map": "/static/css/main.6c04869e.css.map",
+    "main.8f64132e.js.map": "/static/js/main.8f64132e.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3cd41b4.css",
-    "static/js/main.2d000286.js"
+    "static/css/main.6c04869e.css",
+    "static/js/main.8f64132e.js"
   ]
 }
